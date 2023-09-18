@@ -9,7 +9,7 @@ const BasicTable = () => {
   const data = useMemo(() => MOCK_DATA, []);
 
   const tableInstance = useTable({ columns, data });
-  console.log(tableInstance);
+
   const { getTableProps, getTableBodyProps, headerGroups, footerGroups, rows, prepareRow } =
     tableInstance;
 
